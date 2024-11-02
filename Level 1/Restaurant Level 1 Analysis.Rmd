@@ -1,22 +1,28 @@
 ---
 title: "Restaurant level 1 Analysis"
-output: html_notebook
+author: "Oguntoyinbo Taiwo"
+date: "`r Sys.Date()`"
+output: html_document
 ---
-  DATA EXPLORATION
+
+DATA EXPLORATION
   importing dataset and viewing the dataset
   
 ```{r}
 Dataset_bA <- read.csv("C:/Users/Mideh/Downloads/Dataset_bA.csv")
+
 ```
 
-checking the structure and the first 7 rows of the dataset and renaming the dataset
+
 ```{r}
+# checking the structure and the first 7 rows of the dataset and renaming the dataset
 head(Dataset_bA,7)
 structure(Dataset_bA)
 D_A <- Dataset_bA
 ```
-checking to see for blanks in the entire dataset and in the Cuisines column
+
 ```{r}
+# checking to see for blanks in the entire dataset and in the Cuisines column
 sum(D_A == "", na.rm = TRUE)  
 sum(D_A$Cuisines == "")  
 
@@ -24,22 +30,24 @@ sum(D_A$Cuisines == "")
 There were 9 blanks in the dataset which were found in the Cuisines column
 
 
-
- cleaning the dataset by removing the NA
+cleaning the dataset by removing the NA
 
 ```{r}
+#cleaning the dataset by removing the NA
 D_A[D_A == ""] <- NA               
 D_A_clean <- na.omit(D_A)
 ```
-loading necesaary libraries
+
+
+
 ```{r}
+loading necesaary libraries
 library(dplyr)
 library(tidyr)
 
 ```
 
 Task 1: TOP CUISINES AND THEIR PERCENTAGES
-
 ```{r}
 #Split the 'Cuisines' column to handle multiple cuisines per restaurant
 D_A_cuisines <- D_A_clean %>%
@@ -48,6 +56,10 @@ D_A_cuisines <- D_A_clean %>%
 print(D_A_cuisines)
 
 ```
+
+
+
+
 
 ```{r}
 # Count occurrences of each cuisine
@@ -65,6 +77,8 @@ top_cuisines <- top_cuisines %>%
 # View results
 print(top_cuisines)
 ```
+
+
 Task 2: CITY ANALYSIS
 ```{r}
 # Step 1: Identify the City with the Highest Number of Restaurants
@@ -80,6 +94,7 @@ print(city_with_most_restaurants)
 
 
 ```
+
 ```{r}
 # Step 2: Calculate the Average Rating for Restaurants in Each City
 
@@ -99,13 +114,8 @@ city_with_highest_avg_rating <- city_avg_rating[1, ]
 print(city_with_highest_avg_rating)
 
 ```
-```{r}
-# Load necessary library
-library(ggplot2)
-```
 
-
-Task 3: RANGE DISTRIBUTION 
+Task 3: RANGE DISTRIBUTION
 ```{r}
 # Step 1: Create a Bar Chart of Price Range Distribution
 # Assuming the 'Price range' column is already present in your dataset
@@ -115,6 +125,7 @@ ggplot(D_A_cuisines, aes(x = Price.range)) +
   labs(title = "Price Range Distribution", x = "Price Range", y = "Number of Restaurants") +
   theme_minimal()
 ```
+
 ```{r}
 # Step 2: Calculate the Percentage of Restaurants in Each Price Range Category
 price_range_distribution <- D_A_cuisines %>%
@@ -140,15 +151,13 @@ online_delivery_percentage <- D_A_cuisines %>%
 print(online_delivery_percentage)
 ```
 
-```{r}
-# Step 2: Compare the Average Ratings of Restaurants With and Without Online Delivery
 
-# Calculate the average rating for restaurants with and without online delivery
-avg_ratings_online_delivery <- D_A_cuisines %>%
-  group_by(Has.Online.delivery) %>%
-  summarise(average_rating = mean(Aggregate.rating, na.rm = TRUE))
 
-# Print the comparison of average ratings
-print(avg_ratings_online_delivery)
-```
+
+
+
+
+
+
+
 
