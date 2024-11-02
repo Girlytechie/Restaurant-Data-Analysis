@@ -1,8 +1,8 @@
 ---
-title: "Restaurant level 1 Analysis"
+title: "Level 1"
 author: "Oguntoyinbo Taiwo"
 date: "`r Sys.Date()`"
-output: word_document
+output: html_document
 ---
 
 DATA EXPLORATION
