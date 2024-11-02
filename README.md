@@ -67,6 +67,8 @@ Popular cuisines included North Indian, Chinese and Fast food.
 
 North America and Asia, especially India, were prominent for restaurant presence.
 
+Inner city has the highest average rating
+
 New Delhi is the city with the most restaurants, after than Gurgaon and Noida respectively.
 
 Majority of the restaurants (70.57%) do not offer online delivery services, while only (29.43%) does.
@@ -76,6 +78,7 @@ There happens to be no correlation between number of votes and customers ratings
 Price range 1 was the most common among restaurants.
 
 Restaurants in price range 4 achieved the highest average rating, followed by price ranges 3, 2, and 1.
+
 
 
 
