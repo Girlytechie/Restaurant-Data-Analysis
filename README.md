@@ -6,7 +6,7 @@
 
 
 ## Project Overview
-The project aims to analyze a comprehensive dataset of restaurants to derive valuable insights into various aspects, including cuisine preferences, geographic distribution, pricing strategies, delivery options, and customer feedback. The analysis is structured into three levels of tasks, each focusing on different analytical angles
+The project aims to analyze a comprehensive dataset of restaurants to derive valuable insights into various aspects, including cuisine preferences, geographic distribution, pricing strategies, delivery options, and customer feedback. The analysis is structured into two levels of tasks, each focusing on different analytical angles
 
 
 
@@ -33,15 +33,6 @@ The project aims to analyze a comprehensive dataset of restaurants to derive val
 
 • Task: Analyze the dataset to uncover patterns in cuisine combinations, geographic clustering, and restaurant chain presence. This task includes identifying the most popular cuisine pairings and their relationship to ratings, mapping restaurant locations to find area-based clusters, and assessing the ratings and popularity of restaurant chains versus independent establishments.
 
-
-
-
-#### Level 3: Comprehensive Restaurants Performance Analysis
-• Objectives: To investigate customer engagement and service offerings in relation to restaurant pricing and rating. This analysis will assess the influence of customer votes on ratings and determine if premium restaurants are more likely to provide online delivery and table booking options.
-
-• Significance: This analysis is essential for understanding customer voting behavior and the relationship between service offerings and restaurant price range. Insights will guide restaurant managers and marketers in tailoring service options to align with customer expectations and price positioning
-
-• Task: Analyze the dataset to uncover patterns in cuisine combinations, geographic clustering, and restaurant chain presence. This task includes identifying the most popular cuisine pairings and their relationship to ratings, mapping restaurant locations to find area-based clusters, and assessing the ratings and popularity of restaurant chains versus independent establishments.
 
 
 
